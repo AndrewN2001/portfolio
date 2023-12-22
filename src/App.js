@@ -1,11 +1,8 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 import './index.css';
 import Taskbar from './components/taskbar.js';
 import Footer from './components/footer.js';
-import ProjectOne from './pages/projectone.js';
-import ProjectTwo from './pages/projecttwo.js';
-import ProjectThree from './pages/projectthree.js';
-import ProjectFour from './pages/projectfour.js';
 
 function App() {
   return (
@@ -30,10 +27,10 @@ function App() {
         <div id="projects">
           <h1 className='text-[#333335] font-satoshi font-bold italic text-4xl pt-10'>Projects</h1>
           <div id="project_container" className='grid grid-cols-4 grid-rows-1 pt-6'>
-            <button className='bg-[#31539C] text-[#EEE0C3] text-lg hover:bg-[#223A6D] aspect-square flex justify-center items-center'>Project 1</button>
-            <button className='bg-[#31539C] text-[#EEE0C3] text-lg hover:bg-[#223A6D] aspect-square flex justify-center items-center'>Project 2</button>
-            <button className='bg-[#31539C] text-[#EEE0C3] text-lg hover:bg-[#223A6D] aspect-square flex justify-center items-center'>Project 3</button>
-            <button className='bg-[#31539C]  text-[#EEE0C3] text-lg hover:bg-[#223A6D] aspect-square flex justify-center items-center'>Project 4</button>
+            <Link to='/project-one' className='bg-[#31539C] text-[#EEE0C3] text-lg hover:bg-[#223A6D] aspect-square flex justify-center items-center'>Project 1</Link>
+            <Link to='/project-two' className='bg-[#31539C] text-[#EEE0C3] text-lg hover:bg-[#223A6D] aspect-square flex justify-center items-center'>Project 2</Link>
+            <Link to='/project-three' className='bg-[#31539C] text-[#EEE0C3] text-lg hover:bg-[#223A6D] aspect-square flex justify-center items-center'>Project 3</Link>
+            <Link to='/project-four' className='bg-[#31539C]  text-[#EEE0C3] text-lg hover:bg-[#223A6D] aspect-square flex justify-center items-center'>Project 4</Link>
           </div>
         </div>
       </div>
