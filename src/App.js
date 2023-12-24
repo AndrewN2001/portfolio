@@ -26,7 +26,7 @@ function App() {
 
         <div id="projects">
           <h1 className='text-[#333335] font-satoshi font-bold italic text-4xl pt-10'>Projects</h1>
-          <div id="project_container" className='grid grid-cols-4 grid-rows-1 pt-6'>
+          <div id="project_container" className='grid grid-cols-1 grid-rows-4 md:grid-cols-4 md:grid-rows-1 pt-6'>
             <Link to='/project-one' className='bg-[#31539C] text-[#EEE0C3] text-lg hover:bg-[#223A6D] aspect-square flex justify-center items-center'>Project 1</Link>
             <Link to='/project-two' className='bg-[#31539C] text-[#EEE0C3] text-lg hover:bg-[#223A6D] aspect-square flex justify-center items-center'>Project 2</Link>
             <Link to='/project-three' className='bg-[#31539C] text-[#EEE0C3] text-lg hover:bg-[#223A6D] aspect-square flex justify-center items-center'>Project 3</Link>
