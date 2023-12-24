@@ -10,9 +10,9 @@ function App() {
       <Taskbar/>
 
       <div id='landing_page' className="bg-[#31539C] min-h-screen min-w-screen flex flex-col justify-center">
-        <div className='ml-16 gap-12 flex flex-col text-[#E7D3AB]'>
-          <h1 className='text-7xl italic w-[75rem] text-left'>“There is only one thing that makes a dream impossible to achieve: the fear of failure."</h1>
-          <h1 className='text-4xl font-satoshi'>Hi, my name is Andrew Nguyen.</h1>
+        <div className='mx-16 gap-12 flex flex-col text-[#E7D3AB]'>
+          <h1 className='text-5xl md:text-7xl italic w-auto text-left mr-16'>“There is only one thing that makes a dream impossible to achieve: the fear of failure."</h1>
+          <h1 className='text-2xl md:text-4xl font-satoshi'>Hi, my name is Andrew Nguyen.</h1>
         </div>
       </div>
 
