@@ -9,17 +9,17 @@ export default function Taskbar(){
             </div>
 
             <div id="info" className="md:visible invisible z-20 fixed right-0 top-0 flex mt-5 md:mr-16 ml-auto mr-auto gap-5 w-min h-min text-[#EEE0C3] font-satoshi p-5 rounded-md shadow-2xl bg-[#333335]/80 backdrop-blur-sm">
-                <Link to="/portfolio">Home</Link>
-                <Link to='/experience'>Experience</Link>
-                <Link to="/contact">Contact</Link>
-                <a href="/December2023_Resume.pdf" target="_blank" download>Resume</a>
+                <Link to="/portfolio" className="hover:underline hover:underline-offset-4">Home</Link>
+                <Link to='/experience' className="hover:underline hover:underline-offset-4">Experience</Link>
+                <Link to="/contact" className="hover:underline hover:underline-offset-4">Contact</Link>
+                <a href="/December2023_Resume.pdf" className="hover:underline hover:underline-offset-4" target="_blank" download>Resume</a>
             </div>
 
             <div id="info" className="visible md:invisible z-20 fixed inset-x-0 bottom-0 ml-auto mr-auto mb-5 flex gap-5 w-min h-min text-[#EEE0C3] font-satoshi p-5 rounded-md shadow-2xl bg-[#333335]/80 backdrop-blur-sm">
-                <Link to="/portfolio">Home</Link>
-                <Link to='/experience'>Experience</Link>
-                <Link to="/contact">Contact</Link>
-                <a href="/December2023_Resume.pdf" target="_blank" download>Resume</a>
+                <Link to="/portfolio" className="hover:underline hover:underline-offset-4">Home</Link>
+                <Link to='/experience' className="hover:underline hover:underline-offset-4">Experience</Link>
+                <Link to="/contact" className="hover:underline hover:underline-offset-4">Contact</Link>
+                <a href="/December2023_Resume.pdf" className="hover:underline hover:underline-offset-4" target="_blank" download>Resume</a>
             </div>
         </div>
     )
