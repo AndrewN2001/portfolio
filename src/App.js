@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from "react-router-dom"
 import './index.css';
 import Taskbar from './components/taskbar.js';
 import Footer from './components/footer.js';
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div id='main_page'>
       <Taskbar/>

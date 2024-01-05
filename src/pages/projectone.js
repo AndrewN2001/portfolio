@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Taskbar from "../components/taskbar";
 import Footer from "../components/footer";
 
 export default function ProjectOne(){
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return(
         <div>
             <Taskbar/>
