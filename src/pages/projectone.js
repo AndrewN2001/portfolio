@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import Taskbar from "../components/taskbar";
 import Footer from "../components/footer";
+import { GrFormNextLink } from "react-icons/gr";
+import { Link } from "react-router-dom"
+import Project1_Screenshot from '../Project1_Screenshot.png';
 
 export default function ProjectOne(){
-
     useEffect(() => {
         window.scrollTo(0, 0)
       }, [])
@@ -13,14 +15,14 @@ export default function ProjectOne(){
             <Taskbar/>
             <div className="bg-[#E7D3AB] text-[#333335] min-h-screen font-satoshi italic flex justify-center items-center">
                 <div id="scroll" className="w-2/3 md:w-1/2 flex flex-col py-16">
-                    <div id="project-title" className="text-7xl font-medium flex flex-col gap-3">
-                        <h1>Project 1: Weathering</h1>
-                        <h2 className="w-full border-b border-[#333335] bg-slate-300"></h2>
+                    <div id="project-title" className="text-7xl font-medium flex w-full flex-col gap-3">
+                        <h1 className="text-4xl md:text-7xl">Project 1: Weathering</h1>
+                        <h2 className="border-b border-[#333335] bg-slate-300"></h2>
                         <h3 className="not-italic text-sm mb-4">Published 12:15 AM January 4th, 2024</h3>
                     </div>
 
                     <div id="image">
-                        <img src="https://i.insider.com/602ee9d81a89f20019a377c6?width=1136&format=jpeg" alt="just a placeholder lol" className="shadow-md"></img>
+                        <img src={Project1_Screenshot} alt="just a placeholder lol" className="shadow-md"></img>
                         <div className="not-italic text-xs">you just got rick roll'ed</div>
                     </div>
 
@@ -46,6 +48,13 @@ export default function ProjectOne(){
                     </div>
 
                     <h1 className="w-full border-b border-[#333335] bg-slate-300"></h1>
+
+                    <div id="next-project" className="w-full flex justify-end ">
+                        <Link to="/project-two" className="bg-[#333335] text-[#E7D3AB] not-italic p-3 mt-3 flex items-center gap-2 place-content-end hover:bg-[#E7D3AB] border-2 border-[#333335] hover:text-[#333335]">
+                            Project 2
+                            <GrFormNextLink/>
+                        </Link>
+                    </div>
                 </div>
             </div>
             <Footer/>
