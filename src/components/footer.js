@@ -9,7 +9,7 @@ export default function Footer(){
             <div className="md:visible invisible flex gap-5">
                 <Link to='/experience' className="hover:underline hover:underline-offset-4">Experience</Link>
                 <Link to='/contact' className="hover:underline hover:underline-offset-4">Contact</Link>
-                <a href="/January2024_Resume.pdf" className="hover:underline hover:underline-offset-4" target="_blank" download>Resume</a>
+                <a href="/Resume.pdf" className="hover:underline hover:underline-offset-4" target="_blank" download>Resume</a>
             </div>
             <div className="md:visible invisible flex gap-4 text-3xl">
                 <a href="https://github.com/AndrewN2001" target="_blank" rel="noopener noreferrer">

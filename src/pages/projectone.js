@@ -16,33 +16,33 @@ export default function ProjectOne(){
             <div className="bg-[#E7D3AB] text-[#333335] min-h-screen font-satoshi italic flex justify-center items-center">
                 <div id="scroll" className="w-2/3 md:w-1/2 flex flex-col py-16">
                     <div id="project-title" className="text-7xl font-medium flex w-full flex-col gap-3">
-                        <h1 className="text-4xl md:text-7xl">Project 1: Weathering</h1>
+                        <h1 className="text-4xl md:text-7xl">Project 1: Voluntify</h1>
                         <h2 className="border-b border-[#333335] bg-slate-300"></h2>
-                        <h3 className="not-italic text-sm mb-4">Published 12:15 AM January 4th, 2024</h3>
+                        <h3 className="not-italic text-sm mb-4">Published December 4th, 2024</h3>
                     </div>
 
-                    <div id="image">
+                    {/* <div id="image">
                         <img src={Project1_Screenshot} alt="just a placeholder lol" className="shadow-md"></img>
                         <div className="not-italic text-xs">you just got rick roll'ed</div>
-                    </div>
+                    </div> */}
 
-                    <div id="project-info" className="text-3xl not-italic font-extrabold flex flex-col gap-3 mb-4 mt-10">
+                    <div id="project-info" className="text-3xl not-italic flex flex-col gap-3 mb-4 mt-10">
                         <div id="summary" className="pb-4">
                             <h1 className="pb-4">Summary</h1>
                             <h2 className="text-lg">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula, orci id cursus facilisis, odio mauris pulvinar urna, at elementum metus diam sed eros. Nulla sed elit ut libero sagittis porttitor. Quisque ultrices mi nec consequat mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat.
+                                Voluntify is a full-stack web application designed to connect volunteers with community events. It enables users to track their participation history, discover upcoming events, and receive personalized recommendations based on their interests. Administrators can create and manage events through an intuitive interface. This project, developed as part of COSC 4353 (Software Design), aimed to foster community engagement and streamline volunteer coordination.
                             </h2>
                         </div>
                         <div id="Objective" className="pb-4">
                             <h1 className="pb-4">Objective</h1>
                             <h2 className="text-lg">
-                                Morbi semper scelerisque finibus. Aenean ultrices vel justo in mollis. Nulla ipsum tellus, lacinia id libero a, elementum viverra mauris. Quisque rutrum mauris convallis enim commodo convallis. Curabitur dictum risus dapibus neque semper aliquam. Aliquam lectus velit, eleifend et turpis sed, tristique convallis risus. Nam quis leo tristique, feugiat arcu id, laoreet augue. Vestibulum finibus varius leo vitae condimentum. Cras commodo gravida tellus, ac dapibus mauris venenatis id. Pellentesque vehicula metus sit amet molestie varius. Maecenas id urna id mauris viverra lobortis.
+                                As team lead and developer, I guided a team of two in building Voluntify from the ground up. I contributed to designing and implementing RESTful APIs, managing the backend with MongoDB, and creating a responsive front-end using React and TailwindCSS. I also ensured the project adhered to Agile development practices, promoting iterative improvements and effective collaboration. My work focused on developing user authentication, event tracking, and personalized recommendation features.
                             </h2>
                         </div>
                         <div id="tech-stack" className="pb-4">
                             <h1 className="pb-4">Technologies Used</h1>
                             <h2 className="text-lg">
-                                Aliquam id nunc ut erat eleifend dignissim a ut diam. Etiam non nibh eu augue iaculis mattis. Pellentesque commodo eget nibh vitae tempus. Fusce sollicitudin metus quis odio gravida hendrerit. Ut accumsan mi ac sem ullamcorper scelerisque. Maecenas sagittis lectus eget dictum tincidunt. Integer pharetra ligula vel libero pharetra elementum.
+                                The platform was built using the MERN stack (MongoDB, Express.js, React, Node.js) and follows the Agile development methodology.
                             </h2>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ export default function ProjectOne(){
                     <h1 className="w-full border-b border-[#333335] bg-slate-300"></h1>
 
                     <div id="next-project" className="w-full flex justify-end ">
-                        <Link to="/project-two" className="bg-[#333335] text-[#E7D3AB] not-italic p-3 mt-3 flex items-center gap-2 place-content-end hover:bg-[#E7D3AB] border-2 border-[#333335] hover:text-[#333335]">
+                        <Link to="/project-two" className="bg-[#333335] text-[#E7D3AB] p-3 mt-3 flex items-center gap-2 place-content-end hover:bg-[#E7D3AB] border-2 border-[#333335] hover:text-[#333335]">
                             Project 2
                             <GrFormNextLink/>
                         </Link>
