@@ -7,7 +7,6 @@ export default function Footer(){
         <div className="h-min w-full bg-[#333335] text-[#EEE0C3] gap-5 py-3 md:py-7 font-satoshi flex flex-col md:flex-row justify-between px-16 items-center text-lg md:text-xl">
             <h1 className="text-center">Andrew Nguyen 2023 | Design by <a href="https://johnnyle.io/" target="_blank" rel="noopener noreferrer">Johnny Le.</a></h1>
             <div className="md:visible invisible flex gap-5">
-                <Link to='/experience' className="hover:underline hover:underline-offset-4">Experience</Link>
                 <Link to='/contact' className="hover:underline hover:underline-offset-4">Contact</Link>
                 <a href="/Resume.pdf" className="hover:underline hover:underline-offset-4" target="_blank" download>Resume</a>
             </div>

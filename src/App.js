@@ -6,6 +6,8 @@ import Footer from './components/footer.js';
 import profilepic from "../src/images/ProfilePic.png";
 
 function App() {
+  const experienceList = ["Front-End", "Back-End", "Machine Learning / Data Science"];
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -32,6 +34,22 @@ function App() {
 
           <div id="image" className='mb-5 md:ml-5 flex justify-center items-center my-auto min-h-[25rem] min-w-[25rem] md:min-h-[40rem] md:min-w-[40rem] w-full'>
               <img src={profilepic} className='h-[25rem] w-[25rem] md:h-[40rem] md:w-[40rem] rounded-full shadow-xl'/>
+          </div>
+        </div>
+
+        <div id='experience' className='min-w-screen bg-[#E7D3AB] my-10 flex flex-col gap-4'>
+          <h1 className='text-[#333335] font-satoshi font-bold italic text-4xl'>
+              Experience
+          </h1>
+
+          <div className="grid grid-rows-1 grid-cols-3">
+            {experienceList.map((experience, index) => (
+              <div key={index} className='bg-[#333335] text-[#E7D3AB] text-center text-xl aspect-square'>
+                <h1 className='mt-3'>
+                  {experience}
+                </h1>
+              </div>
+            ))}
           </div>
         </div>
 

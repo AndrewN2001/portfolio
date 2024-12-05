@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import Experience from './pages/experience';
 import ContactForm from './pages/contactform';
 import ProjectOne from './pages/projectone';
 import ProjectTwo from './pages/projecttwo';
@@ -17,10 +16,7 @@ const router = createBrowserRouter([
     path: '/portfolio',
     element: <App/>
   }, 
-  {
-    path: 'experience',
-    element: <Experience/>
-  },
+
   {
     path: 'contact',
     element: <ContactForm/>
