@@ -7,12 +7,12 @@ export default function ProjectInfo({selectedProject, setSelectedProject}){
         <div className="relative">
             {selectedProject === "first" && (
                 <div className="inset-0 bg-black bg-opacity-50 z-10 fixed flex justify-center items-center font-satoshi">
-                    <div className="bg-[#E7D3AB] text-[#333335]">
+                    <div className="bg-[#E7D3AB] text-[#333335] min-w-screen">
                         <button onClick={() => setSelectedProject("")} className="pl-2 pt-2 text-3xl">
                             <IoClose />
                         </button>
 
-                        <div className="px-12 pb-5 mb-6 flex flex-col gap-3 w-[50rem]">
+                        <div className="px-12 pb-5 mb-6 flex flex-col gap-3 max-w-[50rem] md:max-h-fit max-h-[55rem] overflow-y-auto">
                             <div id="summary">
                                 <h1 className="text-3xl w-full font-bold italic border-b border-[#333335]">Summary</h1>
                                 <p className="text-lg mt-4">
@@ -46,7 +46,7 @@ export default function ProjectInfo({selectedProject, setSelectedProject}){
                                 <h1 className="text-3xl w-full font-bold italic border-b border-[#333335]">Links</h1>
                                 <ul className="mt-4 flex gap-3">
                                     <li>
-                                        <a href="https://github.com/AndrewN2001/Voluntify" target="_blank" className="flex items-center gap-2 bg-[#4078C0] text-[#E7D3AB] w-fit p-2">
+                                        <a href="https://github.com/AndrewN2001/Voluntify" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-[#4078C0] text-[#E7D3AB] w-fit p-2">
                                             <SiGithub/> Github
                                         </a>
                                     </li>
@@ -64,10 +64,10 @@ export default function ProjectInfo({selectedProject, setSelectedProject}){
                             <IoClose />
                         </button>
 
-                        <div className="px-12 pb-5 mb-6 flex flex-col gap-3 w-[50rem]">
+                        <div className="px-12 pb-5 mb-6 flex flex-col gap-3 max-w-[50rem] md:max-h-fit max-h-[55rem] overflow-y-auto">
                             <div id="summary">
                                 <h1 className="text-3xl w-full font-bold italic border-b border-[#333335]">Summary</h1>
-                                <p className="text-lg mt-4">
+                                <p className="text-lg mt-4 flex">
                                     Voluntify is a full-stack web application designed to connect volunteers with community events. It enables users to track their participation history, discover upcoming events, and receive personalized recommendations based on their interests. Administrators can create and manage events through an intuitive interface. This project, developed as part of COSC 4353 (Software Design), aimed to foster community engagement and streamline volunteer coordination.
                                 </p>
                             </div>
@@ -81,7 +81,7 @@ export default function ProjectInfo({selectedProject, setSelectedProject}){
                                 
                             <div id="technologies">
                                 <h1 className="text-3xl w-full font-bold italic border-b border-[#333335]">Technologies</h1>
-                                <ul className="mt-4 flex gap-3">
+                                <ul className="mt-4 flex flex-wrap gap-3">
                                     <li className="flex items-center gap-2 bg-[#333335] text-[#E7D3AB] w-fit p-2"><SiMongodb/>MongoDB</li>
                                     <li className="flex items-center gap-2 bg-[#333335] text-[#E7D3AB] w-fit p-2"><SiExpress/>Express.js</li>
                                     <li className="flex items-center gap-2 bg-[#333335] text-[#E7D3AB] w-fit p-2"><SiReact/>React.js</li>
@@ -93,7 +93,7 @@ export default function ProjectInfo({selectedProject, setSelectedProject}){
                                 <h1 className="text-3xl w-full font-bold italic border-b border-[#333335]">Links</h1>
                                 <ul className="mt-4 flex gap-3">
                                     <li>
-                                        <a href="https://github.com/AndrewN2001/Voluntify" target="_blank" className="flex items-center gap-2 bg-[#4078C0] text-[#E7D3AB] w-fit p-2">
+                                        <a href="https://github.com/AndrewN2001/Voluntify" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-[#4078C0] text-[#E7D3AB] w-fit p-2">
                                             <SiGithub/> Github
                                         </a>
                                     </li>
@@ -111,7 +111,7 @@ export default function ProjectInfo({selectedProject, setSelectedProject}){
                             <IoClose />
                         </button>
                         
-                        <div className="px-12 pb-5 mb-6 flex flex-col gap-3 w-[50rem]">
+                        <div className="px-12 pb-5 mb-6 flex flex-col gap-3 max-w-[50rem] md:max-h-fit max-h-[55rem] overflow-y-auto">
                             <div id="summary">
                                 <h1 className="text-3xl w-full font-bold italic border-b border-[#333335]">Summary</h1>
                                 <p className="text-lg mt-4">
@@ -145,7 +145,7 @@ export default function ProjectInfo({selectedProject, setSelectedProject}){
                                 <h1 className="text-3xl w-full font-bold italic border-b border-[#333335]">Links</h1>
                                 <ul className="mt-4 flex gap-3">
                                     <li>
-                                        <a href="https://github.com/AndrewN2001/MilitaryAirplaneDetectionProject" target="_blank" className="flex items-center gap-2 bg-[#4078C0] text-[#E7D3AB] w-fit p-2">
+                                        <a href="https://github.com/AndrewN2001/MilitaryAirplaneDetectionProject" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-[#4078C0] text-[#E7D3AB] w-fit p-2">
                                             <SiGithub/> Github
                                         </a>
                                     </li>

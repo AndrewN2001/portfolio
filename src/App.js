@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react'
-import { Link } from "react-router-dom"
 import './index.css';
 import Taskbar from './components/taskbar.js';
 import Footer from './components/footer.js';
@@ -48,7 +47,7 @@ function App() {
           </div>
 
           <div id="image" className='md:max-w-[40rem] md:max-h-[40rem] mx-auto'>
-              <img src={profilepic} className='max-w-full h-auto rounded-full shadow-xl' alt="Profile Picture"/>
+              <img src={profilepic} className='max-w-full h-auto rounded-full shadow-xl' alt=""/>
           </div>
         </div>
 
