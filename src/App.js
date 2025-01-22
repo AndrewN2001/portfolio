@@ -1,12 +1,14 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import { Link } from "react-router-dom"
 import './index.css';
 import Taskbar from './components/taskbar.js';
 import Footer from './components/footer.js';
 import profilepic from "../src/images/ProfilePic.png";
+import ProjectInfo from './components/projectinfo.js';
 
 function App() {
-  const experienceList = ["Front-End", "Back-End", "Machine Learning / Data Science"];
+  const experienceList = ["Languages", "Libraries", "Technologies"];
+  const [selectProject, setSelectProject] = useState("");
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -37,7 +39,7 @@ function App() {
           </div>
         </div>
 
-        <div id='experience' className='min-w-screen bg-[#E7D3AB] my-10 flex flex-col gap-4'>
+        <div id='experience' className='min-w-screen bg-[#E7D3AB] pb-10 flex flex-col gap-4'>
           <h1 className='text-[#333335] font-satoshi font-bold italic text-4xl'>
               Experience
           </h1>
@@ -45,7 +47,7 @@ function App() {
           <div className="grid grid-rows-1 grid-cols-3">
             {experienceList.map((experience, index) => (
               <div key={index} className='bg-[#333335] text-[#E7D3AB] text-center text-xl aspect-square'>
-                <h1 className='mt-3'>
+                <h1 className='mt-5'>
                   {experience}
                 </h1>
               </div>
@@ -56,13 +58,23 @@ function App() {
         <div id="projects">
           <h1 className='text-[#333335] font-satoshi font-bold italic text-4xl pt-10'>Projects</h1>
           <div id="project_container" className='grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 pt-6'>
-            <Link to='/project-one' className='bg-[#31539C] text-[#EEE0C3] text-2xl hover:bg-[#223A6D] aspect-square flex justify-center items-center'>Project 1</Link>
-            <Link to='/project-two' className='bg-[#31539C] text-[#EEE0C3] text-2xl hover:bg-[#223A6D] aspect-square flex justify-center items-center'>Project 2</Link>
-            <Link to='/project-three' className='bg-[#31539C] text-[#EEE0C3] text-2xl hover:bg-[#223A6D] aspect-square flex justify-center items-center'>Project 3</Link>
+            <button className='bg-[#31539C] text-[#EEE0C3] text-left text-4xl italic hover:bg-[#223A6D] aspect-square flex flex-col gap-2 justify-center pl-8' onClick={() => setSelectProject("first")}>
+                <h1>TopShape</h1>
+                <h1 className='text-base'>December 2024 - Ongoing</h1>
+            </button>
+            <button className='bg-[#31539C] text-[#EEE0C3] text-left text-4xl italic hover:bg-[#223A6D] aspect-square flex flex-col gap-2 justify-center pl-8' onClick={() => setSelectProject("second")}>
+                <h1>Voluntify</h1>
+                <h1 className='text-base'>August 2024 - December 2024</h1>
+            </button>
+            <button className='bg-[#31539C] text-[#EEE0C3] text-left text-4xl italic hover:bg-[#223A6D] aspect-square flex flex-col gap-2 justify-center pl-8' onClick={() => setSelectProject("third")}>
+                <h1>Military Aircraft Detection Model</h1>
+                <h1 className='text-base text-left'>August 2024 - November 2024</h1>
+            </button>
           </div>
         </div>
       </div>
-
+      <ProjectInfo selectedProject={selectProject} setSelectedProject={setSelectProject}/>
+      
       <Footer/>
     </div>
   );

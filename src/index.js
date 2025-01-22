@@ -2,10 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import ContactForm from './pages/contactform';
-import ProjectOne from './pages/projectone';
-import ProjectTwo from './pages/projecttwo';
-import ProjectThree from './pages/projectthree';
-import ProjectFour from './pages/projectfour';
 import {
   createBrowserRouter,
   RouterProvider
@@ -21,22 +17,6 @@ const router = createBrowserRouter([
     path: 'contact',
     element: <ContactForm/>
   },
-  {
-    path: 'project-one',
-    element: <ProjectOne/>
-  }, 
-  {
-    path: 'project-two',
-    element: <ProjectTwo/>
-  }, 
-  {
-    path: 'project-three',
-    element: <ProjectThree/>
-  },
-  {
-    path: 'project-four',
-    element: <ProjectFour/>
-  }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
