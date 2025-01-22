@@ -7,7 +7,20 @@ import profilepic from "../src/images/ProfilePic.png";
 import ProjectInfo from './components/projectinfo.js';
 
 function App() {
-  const experienceList = ["Languages", "Libraries", "Technologies"];
+  const experienceList = [
+    {
+      category: "Languages",
+      items: ["Javascript", "HTML", "CSS", "Python", "C++", "SQL", "PHP"]
+    },
+    {
+      category: "Technologies/Frameworks",
+      items: ["React", "Node.js", "Express.js", "MySQL", "Tailwind CSS", "Bootstrap", "jQuery"]
+    },
+    {
+      category: "Developer Tools",
+      items: ["Github", "Visual Studio Code", "Pycharm", "MongoDB Compass", "MySQL Workbench", "Postman", "Jupyter Notebook"]
+    },
+  ];
   const [selectProject, setSelectProject] = useState("");
 
   useEffect(() => {
@@ -47,9 +60,17 @@ function App() {
           <div className="grid grid-rows-1 grid-cols-3">
             {experienceList.map((experience, index) => (
               <div key={index} className='bg-[#333335] text-[#E7D3AB] text-center text-xl aspect-square'>
-                <h1 className='mt-5'>
-                  {experience}
+                <h1 className='mt-5 ml-4 text-2xl italic'>
+                  {experience.category}
                 </h1>
+
+                <div className='flex flex-wrap gap-2 px-3 items-center justify-center mt-5'>
+                  {experience.items.map((skill, index) => (
+                    <div key={index} className='shadow-2xl px-3 py-2 mt-1 bg-[#3d3d3f] hover:bg-[#525253] rounded-md'>
+                      {skill}
+                    </div>
+                  ))}  
+                </div>
               </div>
             ))}
           </div>

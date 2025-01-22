@@ -12,7 +12,7 @@ export default function ProjectInfo({selectedProject, setSelectedProject}){
                             <IoClose />
                         </button>
 
-                        <div className="px-8 pb-5 mb-6 flex flex-col gap-3 w-[45rem]">
+                        <div className="px-12 pb-5 mb-6 flex flex-col gap-3 w-[50rem]">
                             <div id="summary">
                                 <h1 className="text-3xl w-full font-bold italic border-b border-[#333335]">Summary</h1>
                                 <p className="text-lg mt-4">
@@ -64,7 +64,7 @@ export default function ProjectInfo({selectedProject, setSelectedProject}){
                             <IoClose />
                         </button>
 
-                        <div className="px-8 pb-5 mb-6 flex flex-col gap-3 w-[45rem]">
+                        <div className="px-12 pb-5 mb-6 flex flex-col gap-3 w-[50rem]">
                             <div id="summary">
                                 <h1 className="text-3xl w-full font-bold italic border-b border-[#333335]">Summary</h1>
                                 <p className="text-lg mt-4">
@@ -111,7 +111,7 @@ export default function ProjectInfo({selectedProject, setSelectedProject}){
                             <IoClose />
                         </button>
                         
-                        <div className="px-8 pb-5 mb-6 flex flex-col gap-3 w-[45rem]">
+                        <div className="px-12 pb-5 mb-6 flex flex-col gap-3 w-[50rem]">
                             <div id="summary">
                                 <h1 className="text-3xl w-full font-bold italic border-b border-[#333335]">Summary</h1>
                                 <p className="text-lg mt-4">
