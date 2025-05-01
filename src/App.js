@@ -65,7 +65,7 @@ function App() {
 
                 <div className='flex flex-wrap gap-2 px-3 items-center justify-center mt-5'>
                   {experience.items.map((skill, skillIndex) => (
-                    <div key={skillIndex} className='shadow-2xl px-3 py-2 mt-1 text-2xl md:text-xl bg-[#3d3d3f] hover:bg-[#525253] rounded-md'>
+                    <div key={skillIndex} className='shadow-2xl px-3 py-2 mt-1 text-xl md:text-xl bg-[#3d3d3f] hover:bg-[#525253] rounded-md'>
                       {skill}
                     </div>
                   ))}  
