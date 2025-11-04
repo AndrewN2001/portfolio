@@ -31,14 +31,14 @@ function App() {
       <Taskbar/>
 
       <div id='landing_page' className="bg-[#31539C] min-h-screen min-w-screen flex flex-col justify-center">
-        <div className='mx-16 my-10 gap-12 flex flex-col text-[#E7D3AB]'>
+        <div className='px-10 py-20 gap-12 flex flex-col items  -center text-[#E7D3AB]'>
           <h1 className='text-5xl md:text-7xl italic w-auto text-left mr-16'>“There is only one thing that makes a dream impossible to achieve: the fear of failure."</h1>
           <h1 className='text-2xl md:text-4xl font-satoshi'>Hi, my name is Andrew Nguyen.</h1>
         </div>
       </div>
 
-      <div id='secondary_page' className='min-w-screen bg-[#E7D3AB] px-20 py-20'>
-        <div id="about_me" className='grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-2 pb-10'>
+      <div id='secondary_page' className='min-w-screen bg-[#E7D3AB] py-20 px-10'>
+        <div id="about_me" className='md:flex md:grid-rows-1 md:grid-cols-2 pb-10'>
           <div className="flex flex-col justify-center">
             <h1 className='text-[#333335] font-satoshi font-bold italic text-4xl'>Who am I?</h1>
             <h2 className='text-[#333335] font-satoshi text-2xl pt-6 pr-6'>
@@ -46,7 +46,7 @@ function App() {
             </h2>
           </div>
 
-          <div id="image" className='md:max-w-[40rem] md:max-h-[40rem] mx-auto'>
+          <div id="image" className='hidden md:block md:max-w-[40rem] md:max-h-[40rem] mx-auto'>
               <img src={profilepic} className='max-w-full h-auto rounded-full shadow-xl' alt=""/>
           </div>
         </div>
@@ -56,16 +56,16 @@ function App() {
               Experience
           </h1>
 
-          <div className="grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-3 items-stretch">
+          <div className="grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-3 items-stretch gap-2">
             {experienceList.map((experience, index) => (
-              <div key={index} className='bg-[#333335] text-[#E7D3AB] text-center text-xl aspect-square flex flex-col py-5'>
-                <h1 className='ml-4 text-2xl italic'>
+              <div key={index} className='bg-[#333335] text-[#E7D3AB] text-center text-xl flex flex-col py-10 rounded-md'>
+                <h1 className='ml-4 text-2xl md:text-3xl italic'>
                   {experience.category}
                 </h1>
 
                 <div className='flex flex-wrap gap-2 px-3 items-center justify-center mt-5'>
                   {experience.items.map((skill, skillIndex) => (
-                    <div key={skillIndex} className='shadow-2xl px-3 py-2 mt-1 text-xl md:text-xl bg-[#3d3d3f] hover:bg-[#525253] rounded-md'>
+                    <div key={skillIndex} className='shadow-2xl px-3 py-2 mt-1 text-md md:text-lg bg-[#3d3d3f] hover:bg-[#525253] rounded-md'>
                       {skill}
                     </div>
                   ))}  
@@ -76,25 +76,25 @@ function App() {
         </div>
 
         <div id="projects">
-          <h1 className='text-[#333335] font-satoshi font-bold italic text-4xl pt-10'>Projects</h1>
-          <div id="project_container" className='grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 pt-6'>
-            <button className='bg-[#31539C] text-[#EEE0C3] text-left text-4xl md:text-3xl italic hover:bg-[#223A6D] aspect-square flex flex-col gap-2 justify-center pl-8' onClick={() => setSelectProject("first")}>
+          <h1 className='text-[#333335] font-satoshi font-bold italic pt-10 text-4xl'>Projects</h1>
+          <div id="project_container" className='grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 pt-6 gap-2 text-left text-4xl'>
+            <a href="https://github.com/AndrewN2001/portfolio" target="_blank" rel="noreferrer" className='bg-[#31539C] md:hover:bg-[#445f97] text-[#EEE0C3] italic aspect-square flex flex-col gap-2 justify-center p-8 rounded-md'>
                 <h1>TopShape</h1>
-                <h1 className='text-base'>December 2024 - Ongoing</h1>
-            </button>
-            <button className='bg-[#31539C] text-[#EEE0C3] text-left text-4xl md:text-3xl italic hover:bg-[#223A6D] aspect-square flex flex-col gap-2 justify-center pl-8' onClick={() => setSelectProject("second")}>
+                <h1 className='text-base text-wrap'>December 2024 - Ongoing</h1>
+            </a>
+            <a href="https://github.com/AndrewN2001/Voluntify" target="_blank" rel="noreferrer" className='bg-[#31539c] text-[#EEE0C3] md:hover:bg-[#445f97] italic aspect-square flex flex-col gap-2 justify-center p-8 rounded-md'>
                 <h1>Voluntify</h1>
-                <h1 className='text-base'>August 2024 - December 2024</h1>
-            </button>
-            <button className='bg-[#31539C] text-[#EEE0C3] text-left text-4xl md:text-3xl italic hover:bg-[#223A6D] aspect-square flex flex-col gap-2 justify-center px-8' onClick={() => setSelectProject("third")}>
+                <h1 className='text-base text-wrap'>August 2024 - December 2024</h1>
+            </a>
+            <a href="https://github.com/AndrewN2001/MilitaryAirplaneDetectionProject" target="_blank" rel="noreferrer" className='bg-[#31539C] hover:bg-[#445f97] text-[#EEE0C3] italic aspect-square flex flex-col gap-2 justify-center p-8 rounded-md'>
                 <h1>Military Aircraft Detection Model</h1>
-                <h1 className='text-base text-left'>August 2024 - November 2024</h1>
-            </button>
+                <h1 className='text-sm text-wrap md:block md:text-base md:text-left'>August 2024 - November 2024</h1>
+            </a>
           </div>
         </div>
       </div>
       <ProjectInfo selectedProject={selectProject} setSelectedProject={setSelectProject}/>
-      
+            
       <Footer/>
     </div>
   );
