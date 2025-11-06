@@ -41,12 +41,12 @@ function App() {
         <div id="about_me" className='md:flex md:grid-rows-1 md:grid-cols-2 pb-10'>
           <div className="flex flex-col justify-center">
             <h1 className='text-[#333335] font-satoshi font-bold italic text-4xl'>Who am I?</h1>
-            <div className='flex flex-col font-satoshi text-[#333335] text-xl md:text-2xl gap-4'>
+            <div className='flex flex-col font-satoshi text-[#333335] text-xl md:text-2xl'>
               <h2 className='pt-6 pr-6'>
                 Hi! I’m Andrew and I recently graduated in May 2025 as a Computer Science graduate from the University of Houston, specializing in Full-Stack Web Development and Data Analysis. I’m passionate about building software that makes a real-world impact — from intuitive web experiences to scalable, data-driven solutions that help people connect, work, and explore more effectively.
               </h2>
               <h2>
-                Outside of engineering, I’m usually behind a camera, at the gym, or exploring new coffee shops — anything that lets me connect with people, stay grounded, and express creativity. I love capturing good stories, experimenting with new perspectives, and creating spaces where people feel seen, motivated, and supported.
+                <br></br>Outside of engineering, I’m usually behind a camera, at the gym, or exploring new coffee shops — anything that lets me connect with people, stay grounded, and express creativity. I love capturing good stories, experimenting with new perspectives, and creating spaces where people feel seen, motivated, and supported.
               </h2>
             </div>
           </div>
