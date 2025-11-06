@@ -27,7 +27,7 @@ function App() {
   }, [])
 
   return (
-    <div id='main_page'>
+    <div id='main_page' className='bg-[#31539C]'>
       <Taskbar/>
 
       <div id='landing_page' className="bg-[#31539C] min-h-screen min-w-screen flex flex-col justify-center">
