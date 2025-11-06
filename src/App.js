@@ -41,9 +41,14 @@ function App() {
         <div id="about_me" className='md:flex md:grid-rows-1 md:grid-cols-2 pb-10'>
           <div className="flex flex-col justify-center">
             <h1 className='text-[#333335] font-satoshi font-bold italic text-4xl'>Who am I?</h1>
-            <h2 className='text-[#333335] font-satoshi text-2xl pt-6 pr-6'>
-              I am a senior at the University of Houston studying Computer Science, based in Houston, TX. Since 2020, I spend my days diving into the world of code and algorithms, constantly learning new technologies and expanding my knowledge and expertise. When I'm not writing code, you can find me at the gym creating new PRs, documenting my day-to-day adventures through my lens, or getting lost in the sounds of a new song genre. 
-            </h2>
+            <div className='flex flex-col font-satoshi text-[#333335] text-xl md:text-2xl gap-4'>
+              <h2 className='pt-6 pr-6'>
+                Hi! I’m Andrew and I recently graduated in May 2025 as a Computer Science graduate from the University of Houston, specializing in Full-Stack Web Development and Data Analysis. I’m passionate about building software that makes a real-world impact — from intuitive web experiences to scalable, data-driven solutions that help people connect, work, and explore more effectively.
+              </h2>
+              <h2>
+                Outside of engineering, I’m usually behind a camera, at the gym, or exploring new coffee shops — anything that lets me connect with people, stay grounded, and express creativity. I love capturing good stories, experimenting with new perspectives, and creating spaces where people feel seen, motivated, and supported.
+              </h2>
+            </div>
           </div>
 
           <div id="image" className='hidden md:block md:max-w-[40rem] md:max-h-[40rem] mx-auto'>

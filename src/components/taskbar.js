@@ -16,7 +16,7 @@ export default function Taskbar(){
             </div>
 
             {/*mobile view*/}
-            <div id="info" className="visible md:invisible z-20 fixed inset-x-0 bottom-0 ml-auto mr-auto mb-5 flex gap-5 w-min h-min text-[#EEE0C3] font-satoshi p-5 rounded-md shadow-2xl bg-[#333335]/80 backdrop-blur-sm">
+            <div id="info" className="visible md:invisible z-20 fixed inset-x-0 top-0 ml-auto mr-auto mt-5 flex gap-5 w-min h-min text-[#EEE0C3] font-satoshi p-5 rounded-md shadow-2xl bg-[#333335]/80 backdrop-blur-sm">
                 <Link to="/" className="">Home</Link>
                 <a href="mailto:andrew.nguyen.ta@gmail.com" className="hover:underline">Contact</a>
                 <a href="/Test_Resume.pdf" className="hover:underline hover:underline-offset-4" target="_blank" rel="noreferrer" download>Resume</a>
