@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Taskbar from "../components/taskbar";
 import Footer from "../components/footer";
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 
 export default function ContactForm(){
     useEffect(() => {
@@ -54,9 +54,8 @@ export default function ContactForm(){
                     <div className="font-satoshi text-[#333335] text-4xl md:text-7xl">
                         Contact Me!
                     </div>
-                    <h2 className="border-b border-[#333335]"></h2>
+                    {/* <h2 className="border-b border-[#333335]"></h2> */}
                 </div>
-
                 <form className="flex flex-col w-2/3 mt-5 gap-3" onSubmit={submit}>
                     <div className="flex gap-5 w-full">
                         <div id="email_input" className="flex flex-col w-1/2">
